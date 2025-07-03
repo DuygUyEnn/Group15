@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="MauiApp3.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MauiApp3"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="10">
+            <Button
+                Text="← Home"
+                Clicked="OnBackToHomeClicked"
+                BackgroundColor="Red"
+                TextColor="White"
+                HorizontalOptions="Start"
+                Margin="0,10,0,0"
+                Padding="10.5"/>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button x:Name="DayButton" Text="Day" Clicked="OnDayClicked" BackgroundColor="DarkCyan" />
+                <Button x:Name="WeekButton" Text="Week" Clicked="OnWeekClicked" BackgroundColor="DarkCyan" />
+                <Button x:Name ="MonthButton" Text="Month" Clicked="OnMonthClicked" BackgroundColor="DarkCyan" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout  Spacing="10" Padding="10" HorizontalOptions="Center">
+                <Button x:Name="TemperatureButton" Text="Temperature" Clicked="OnTemperatureClicked" BackgroundColor="DarkCyan"/>
+                <Button x:Name="HumidityButton" Text="Humidity" Clicked="OnHumidityClicked" BackgroundColor="DarkCyan"/>
+                <Button x:Name="PressureButton" Text="Pressure" Clicked="OnPressureClicked" BackgroundColor="DarkCyan"/>
+                <Button x:Name="LightButton" Text="Light" Clicked="OnLightClicked" BackgroundColor="DarkCyan"/>
+            </HorizontalStackLayout>
+
+            <Grid Padding="10">
+                <lvc:CartesianChart Series="{Binding Series}" 
+                                    HeightRequest="500"
+                                    XAxes="{Binding XAxes}"
+                                    YAxes="{Binding YAxes}"
+                                    ZoomMode="X"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

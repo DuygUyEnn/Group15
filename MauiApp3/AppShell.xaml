@@ -1,0 +1,23 @@
+<Shell
+    x:Class="MauiApp3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp3"
+    Shell.FlyoutBehavior="Disabled"
+    Title="MauiApp3">
+
+    <!-- Trang khởi đầu -->
+    <ShellContent
+        Title="Start"
+        ContentTemplate="{DataTemplate local:HomePage}"
+        Route="StartPage" />
+
+    <!-- Trang chính -->
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"
+        IsVisible="False" />
+    <!-- Ẩn khỏi menu -->
+
+</Shell>

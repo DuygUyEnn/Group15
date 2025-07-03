@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:models\\weatherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\weatherapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:weatherapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\dtos\\weatherresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:dtos\\weatherresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\weatherdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:weatherdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|e:\\acs\\project software\\specialrepos\\weatherapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5E5E322-F6B2-4DC5-BB69-7531BE407C47}|WeatherApi.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherDbContext.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\WeatherDbContext.cs",
+              "RelativeDocumentMoniker": "WeatherDbContext.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\WeatherDbContext.cs",
+              "RelativeToolTip": "WeatherDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:45:31.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherData.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Models\\WeatherData.cs",
+              "RelativeDocumentMoniker": "Models\\WeatherData.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Models\\WeatherData.cs",
+              "RelativeToolTip": "Models\\WeatherData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:43:49.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-04T15:49:04.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherController.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Controllers\\WeatherController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherController.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Controllers\\WeatherController.cs",
+              "RelativeToolTip": "Controllers\\WeatherController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:41:14.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:50:15.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherApi.http",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\WeatherApi.http",
+              "RelativeDocumentMoniker": "WeatherApi.http",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\WeatherApi.http",
+              "RelativeToolTip": "WeatherApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-05-04T15:53:40.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:49:16.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherResponseDto.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Dtos\\WeatherResponseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\WeatherResponseDto.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\Dtos\\WeatherResponseDto.cs",
+              "RelativeToolTip": "Dtos\\WeatherResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:47:38.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WeatherForecast.cs",
+              "ToolTip": "E:\\ACS\\Project software\\specialRepos\\WeatherApi\\WeatherForecast.cs",
+              "RelativeToolTip": "WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T15:51:12.252Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

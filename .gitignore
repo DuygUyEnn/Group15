@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> WeatherAPI
+=======
+
+>>>>>>> WeatherApp
+maui-client/
+special-group-project/.idea/
+special-group-project/cmake-build-debug-wsl/
+special-group-project/json/
+special-group-project/libpqxx/
+<<<<<<< HEAD
+<<<<<<< HEAD
+special-group-project/paho.mqtt.cpp/
+=======
+special-group-project/cmake-build-debug-wsl/Testing/Temporary/LastTest.log
+special-group-project/cmake-build-debug-wsl/Testing/Temporary/
+maui-client/
+>>>>>>> Duy
+=======
+special-group-project/paho.mqtt.cpp/
+>>>>>>> WeatherAPI
+=======
+special-group-project/paho.mqtt.cpp/
+>>>>>>> WeatherApp

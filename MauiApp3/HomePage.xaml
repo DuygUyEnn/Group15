@@ -1,0 +1,192 @@
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MauiApp3.HomePage"
+    Title="HomePage">
+
+    <Grid BackgroundColor="SlateGray">
+        <!-- Grid chia 2 cột -->
+        <Grid ColumnDefinitions="1*, 2*" Padding="0">
+
+            <!-- Cột trái: bo góc + ảnh nền -->
+            <Frame Grid.Column="0" CornerRadius="30" HasShadow="True" Padding="0" Margin="0">
+                <Grid>
+                    <Image Source="background2.png"
+                           Aspect="AspectFill"
+                           Opacity="0.7" />
+
+                    <VerticalStackLayout Padding="20" VerticalOptions="Start">
+                        
+                        <Label Text="{Binding TodayString}" FontSize="60" TextColor="White" FontAttributes="Bold" Padding="10"/>
+                        <Label Text="{Binding DateString}" FontSize="40" TextColor="White" FontAttributes="Bold" Padding="10"/>
+                        <Label Text="{Binding CurrentSensor.DeviceId}" FontSize="30" TextColor="White" FontAttributes="Bold" Padding="10" />
+                        <HorizontalStackLayout Spacing="8">
+
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <Grid>
+                        <VerticalStackLayout VerticalOptions="End"
+                         HorizontalOptions="Start"
+                         Margin="0,0,250,60"
+                         Spacing="6">
+                            <!-- Khoảng cách giữa các thành phần -->
+
+                            <!-- ICON -->
+                            <Image Source="{Binding WeatherIcon}"
+               Aspect="AspectFit"
+               HeightRequest="120"
+               WidthRequest="120"
+               Scale="2.0" />
+
+                            <!-- NHIỆT ĐỘ -->
+                        <HorizontalStackLayout Spacing="8" Padding="17">
+                            <Image Source="temperature.png" HeightRequest="35" WidthRequest="35" />
+                            <Label Text="{Binding CurrentSensor.temperature, StringFormat='{0:F1} °C'}"
+               TextColor="White" FontSize="35" />
+                        </HorizontalStackLayout>
+
+                            <!-- MÔ TẢ -->
+                            <Label Text="{Binding WeatherDescription}"
+               FontSize="35"
+               FontAttributes="Bold"
+               TextColor="White"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </Grid>
+            </Frame>
+
+            <!-- Cột phải: thông tin sensor và nút -->
+            <VerticalStackLayout Grid.Column="1" Padding="0" Spacing="10" VerticalOptions="Center">
+                <!-- Phần 1: Thông tin cảm biến + nút chuyển -->
+                <Border StrokeThickness="0"
+                        BackgroundColor="Black"
+                        Opacity="0.7"
+                        HorizontalOptions="Fill"
+                        Padding="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="0,20,0,20"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Grid ColumnDefinitions="Auto,*,Auto">
+                            <Button Grid.Column="0"
+                                    Text="&lt;"
+                                    Clicked="OnPreviousClicked"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Transparent"
+                                    FontSize="40"/>
+
+                            <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center" Spacing="8">
+
+                                <!-- Dòng tiêu đề -->
+                                <Label Text="Other weather attributes"
+           TextColor="White"
+           FontSize="26"
+           FontAttributes="Bold"
+           HorizontalOptions="Center" />
+
+
+                                <HorizontalStackLayout Spacing="8">
+                                    <Image Source="humidity.png" HeightRequest="24" WidthRequest="24" />
+                                    <Label Text="{Binding CurrentSensor.humidity, StringFormat='{0:F1} %'}"
+               TextColor="White" FontSize="24" />
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Spacing="8">
+                                    <Image Source="sensor.png" HeightRequest="24" WidthRequest="24" />
+                                    <Label Text="{Binding CurrentSensor.light, StringFormat='{0:F1} lux'}"
+               TextColor="White" FontSize="24" />
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Spacing="8">
+                                    <Image Source="pressure.png" HeightRequest="24" WidthRequest="24" />
+                                    <Label Text="{Binding CurrentSensor.pressure, StringFormat='{0:F1} hPa'}"
+               TextColor="White" FontSize="24" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+
+                            <Button Grid.Column="2"
+                                    Text="&gt;"
+                                    Clicked="OnNextClicked"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Transparent"
+                                    FontSize="40"/>
+                        </Grid>
+
+                        
+                        <!-- Phần 2: 4 bảng nhỏ hiển thị nhiệt độ -->
+                        <VerticalStackLayout Padding="20" Spacing="10">
+
+                            <!-- Dòng tiêu đề -->
+                            <Label Text="Last temperature in 4 days"
+           TextColor="White"
+           FontSize="26"
+           FontAttributes="Bold"
+           HorizontalOptions="Center" />
+
+                            <!-- Phần 2: 4 bảng nhỏ hiển thị nhiệt độ -->
+                            <CollectionView ItemsSource="{Binding TemperatureSummary}"
+                    ItemsLayout="HorizontalList"
+                    HorizontalOptions="Center"
+                    HeightRequest="100"
+                    SelectionMode="None">
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Frame CornerRadius="15"
+                       Padding="10"
+                       WidthRequest="100"
+                       HeightRequest="80"
+                       BackgroundColor="White"
+                       HasShadow="True"
+                       HorizontalOptions="Center">
+                                            <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                                                <Label Text="{Binding Date}"
+                               FontSize="14"
+                               HorizontalTextAlignment="Center" />
+                                                <Label Text="{Binding Temperature}"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               HorizontalTextAlignment="Center" />
+                                            </VerticalStackLayout>
+                                        </Frame>
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+
+                        </VerticalStackLayout>
+                        <!-- Phần 3: Nút xem biểu đồ -->
+                        <Border Padding="0"
+                                WidthRequest="250"
+                                HeightRequest="50"
+                                HorizontalOptions="Center">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10,10,10,10"/>
+                            </Border.StrokeShape>
+
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                    <GradientStop Color="#A1C4FD" Offset="0.0" />
+                                    <GradientStop Color="#6A82FB" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+
+                            <Button Text="Go to weather chart"
+                                    Clicked="OnChartButtonClicked"
+                                    BackgroundColor="Transparent"
+                                    TextColor="White"
+                                    FontAttributes="Bold"
+                                    FontSize="16"
+                                    CornerRadius="20"/>
+                        </Border>
+
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,30 @@
+[submodule "special-group-project/paho.mqtt.c"]
+	path = special-group-project/paho.mqtt.c
+	url = https://github.com/eclipse-paho/paho.mqtt.c.git
+[submodule "special-group-project/cmake-build-debug-wsl/_deps/nlohmann_json-src"]
+	path = special-group-project/cmake-build-debug-wsl/_deps/nlohmann_json-src
+	url = https://github.com/nlohmann/json.git
+[submodule "special-group-project/cmake-build-debug-wsl/_deps/libpqxx-src"]
+	path = special-group-project/cmake-build-debug-wsl/_deps/libpqxx-src
+	url = https://github.com/jtv/libpqxx.git
+[submodule "paho.mqtt.cpp"]
+	path = paho.mqtt.cpp
+	url = https://github.com/eclipse-paho/paho.mqtt.cpp.git
+[submodule "libpqxx"]
+	path = libpqxx
+	url = https://github.com/jtv/libpqxx.git
+[submodule "special-group-project/special-group-project/cmake-build-debug-wsl/_deps/nlohmann_json-src"]
+	path = special-group-project/special-group-project/cmake-build-debug-wsl/_deps/nlohmann_json-src
+	url = https://github.com/nlohmann/json.git
+[submodule "special-group-project/paho.mqtt.cpp"]
+	path = special-group-project/paho.mqtt.cpp
+	url = https://github.com/eclipse-paho/paho.mqtt.cpp.git
+[submodule "special-group-project/libpqxx"]
+	path = special-group-project/libpqxx
+	url = https://github.com/jtv/libpqxx.git
+[submodule "json"]
+	path = json
+	url = https://github.com/nlohmann/json.git
+[submodule "special-group-project/json"]
+	path = special-group-project/json
+	url = https://github.com/nlohmann/json.git
